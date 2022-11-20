@@ -11,19 +11,21 @@
     <title>Login | ADMIN</title>
 </head>
 <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" action="../../actions/admin/sign-up.php" method="POST">
         <img class="logo" src="../../../assets/images/logo/logo.png" alt="logo">
         <h1 class="h3 mb-3 font-weight-normal">Cadastrar Admin</h1>
+        <label for="inputEmail" class="sr-only">Nome do Usuário</label>
+        <input type="text" name="name" id="inputEmail" class="form-control" placeholder="Nome do Usuário" required autofocus>
         <label for="inputEmail" class="sr-only">Endereço de Email</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de Email" required autofocus>
+        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Endereço de Email" required>
         <label for="inputPassword" class="sr-only">Palavra passe</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Palavra passe" required>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Palavra passe" required>
 
         <div class="mb-3 select">
             <select name="role" id="format">
                 <option selected disabled>Escolha o tipo de usuário</option>
-                <option value="admin">Administrator</option>
-                <option value="co-admin">Moderator</option>
+                <option value="Administrator">Administrator</option>
+                <option value="Moderator">Moderator</option>
             </select>
         </div>
 
