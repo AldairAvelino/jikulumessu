@@ -24,7 +24,7 @@
             die();
         }else{
             setcookie("login",$login);
-            header("Location: ../../pages/index.php");
+            header("Location: ../../pages/admin/dashboard.php");
         }
 
         
