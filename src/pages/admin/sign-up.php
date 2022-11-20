@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../../assets/css/login-and-sing-up.css">
     <link rel="stylesheet" href="../../../assets/bootstrap-4.6.2-dist/css/bootstrap.css">
     <script src="../../../assets/bootstrap-4.6.2-dist/js/bootstrap.js"></script>
-    <title>Login | ADMIN</title>
+    <title>Sign Up | ADMIN</title>
 </head>
 <body class="text-center">
     <form class="form-signin" action="../../actions/admin/sign-up.php" method="POST">

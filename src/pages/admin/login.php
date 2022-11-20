@@ -11,19 +11,19 @@
     <title>Login | ADMIN</title>
 </head>
 <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" action="../../actions/admin/login.php" method="POST">
         <img class="logo" src="../../../assets/images/logo/logo.png" alt="logo">
         <h1 class="h3 mb-3 font-weight-normal">Logar</h1>
         <label for="inputEmail" class="sr-only">Endereço de Email</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de Email" required autofocus>
+        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Endereço de Email" required autofocus>
         <label for="inputPassword" class="sr-only">Palavra passe</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Palavra passe" required>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Palavra passe" required>
 
         <div class="mb-3 text-right">
             <p>Ainda não tenho uma conta! <a href="sign-up.php">Criar</a></p>
         </div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="login">Entrar</button>
     </form>
 </body>
 </html>
