@@ -37,7 +37,7 @@
         <input type="text" name="bi" id="inputEmail" class="form-control mb-3" placeholder="Bilhete de Identidade" required autofocus>
 
         <div class="mb-3 text-right">
-            <p>Não reservei meu lugar ainda! <a href="sign-up.php">Reservar</a></p>
+            <p>Não reservei meu lugar ainda! <a href="sign-up-user.php">Reservar</a></p>
         </div>
 
         <button class="btn btn-lg btn-primary btn-block" type="submit" name="consultar">Consultar</button>

@@ -39,7 +39,7 @@
         <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Palavra passe" required>
 
         <div class="mb-3 text-right">
-            <p>Ainda não tenho uma conta! <a href="sign-up.php">Criar</a></p>
+            <p>Ainda não tenho uma conta! <a href="sign-up-admin.php">Criar</a></p>
         </div>
 
         <button class="btn btn-lg btn-primary btn-block" type="submit" name="login">Entrar</button>

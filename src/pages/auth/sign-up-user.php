@@ -39,7 +39,7 @@
         <input type="text" name="bi" id="inputEmail" class="form-control" placeholder="Bilhete de Identidade" required>
 
         <div class="mb-3 text-right">
-            <p>Já me cadastrei! <a href="status-consult.php">Consultar me Status</a></p>
+            <p>Já me cadastrei! <a href="status-consult-user.php">Consultar me Status</a></p>
         </div>
 
         <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Reservar</button>
