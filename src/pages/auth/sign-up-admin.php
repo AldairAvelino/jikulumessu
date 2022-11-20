@@ -11,7 +11,7 @@
     <title>Sign Up | ADMIN</title>
 </head>
 <body class="text-center">
-    <form class="form-signin" action="../../actions/admin/sign-up.php" method="POST">
+    <form class="form-signin" action="../../actions/auth/sign-up-admin.php" method="POST">
         <img class="logo" src="../../../assets/images/logo/logo.png" alt="logo">
         <h1 class="h3 mb-3 font-weight-normal">Cadastrar Admin</h1>
         <label for="inputEmail" class="sr-only">Nome do Usuário</label>
