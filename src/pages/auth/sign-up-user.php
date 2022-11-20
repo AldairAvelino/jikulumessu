@@ -23,7 +23,7 @@
             <p>Já me cadastrei! <a href="status-consult.php">Consultar me Status</a></p>
         </div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit" name="cadastrar">Reservar</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Reservar</button>
     </form>
 </body>
 </html>

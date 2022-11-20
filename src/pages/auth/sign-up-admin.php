@@ -33,7 +33,7 @@
             <p>Já tenho uma conta! <a href="login.php">Logar</a></p>
         </div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Cadastrar</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Cadastrar</button>
     </form>
 </body>
 </html>
