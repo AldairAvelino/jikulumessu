@@ -14,8 +14,8 @@
     <form class="form-signin">
         <img class="logo" src="../../../assets/images/logo/logo.png" alt="logo">
         <h1 class="h3 mb-3 font-weight-normal">Logar</h1>
-        <label for="inputEmail" class="sr-only">Endereço de Email ou Nome</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de Email ou Nome" required autofocus>
+        <label for="inputEmail" class="sr-only">Endereço de Email</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de Email" required autofocus>
         <label for="inputPassword" class="sr-only">Palavra passe</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Palavra passe" required>
 
