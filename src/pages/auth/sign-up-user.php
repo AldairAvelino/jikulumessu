@@ -30,7 +30,7 @@
         </nav>
     </header>
     
-    <form class="form-signin" action="../../actions/users/sign-up.php" method="POST">
+    <form class="form-signin" action="../../actions/auth/sign-up-user.php" method="POST">
         <img class="logo" src="../../../assets/images/logo/logo.png" alt="logo">
         <h1 class="h3 mb-3 font-weight-normal">Reservar Lugar na Fila</h1>
         <label for="inputEmail" class="sr-only">Nome do Usuário</label>
