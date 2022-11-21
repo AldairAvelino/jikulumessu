@@ -30,7 +30,7 @@
         </nav>
     </header>
     
-    <form class="form-signin" action="../../actions/admin/login.php" method="POST">
+    <form class="form-signin" action="../../actions/auth/login-admin.php" method="POST">
         <img class="logo" src="../../../assets/images/logo/logo.png" alt="logo">
         <h1 class="h3 mb-3 font-weight-normal">Logar</h1>
         <label for="inputEmail" class="sr-only">Endereço de Email</label>

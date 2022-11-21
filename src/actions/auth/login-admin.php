@@ -19,12 +19,12 @@
         
         if(mysqli_num_rows($search) <= 0){
             echo "<script language='javascript' type='text/javascript'>
-            alert('Login e/ou senha incorretos');window.location
-            .href='../../pages/admin/login.php';</script>";
+            alert('Login ou senha incorretos! Tenta novamente');window.location
+            .href='../../pages/auth/login-admin.php';</script>";
             die();
         }else{
             setcookie("login",$login);
-            header("Location: ../../pages/admin/dashboard.php");
+            header("Location: ../../pages/dashboard/dashboard.php");
         }
 
         
