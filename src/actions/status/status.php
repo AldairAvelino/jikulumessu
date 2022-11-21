@@ -1,31 +1,33 @@
 <?php
+    // começar ou retomar uma sessão
+    session_start();
     include("../connection.php");
 
-    $bi = mysqli_real_escape_string($connection, $_POST['bi']);
-    $consult = mysqli_real_escape_string($connection, $_POST['consultar']);
-    
-    //echo($email);
-    //echo($password);
+    // se vier um pedido para login
+    if (!empty($_POST)) {
+        $bi = mysqli_real_escape_string($connection, $_POST['bi']);
+        $consultar = mysqli_real_escape_string($connection, $_POST['consultar']);
 
-    if(isset($consult)){
-        $search = mysqli_query($connection, "SELECT * FROM user WHERE bi ='$bi'")
-        or die("FALHA AO BUSCAR");
+        // verificar o utilizador em questão (pretendemos obter uma única linha de registos)
+	    $search = mysqli_query($connection, "SELECT * FROM user WHERE bi ='$bi'")
+        or die("FALHA AO CONSULTAR");
 
         $result = mysqli_fetch_array($search);
-        
-        echo($result['name']);
-        echo($result['bi']);
-        echo($result['status']);
-        
-        if(mysqli_num_rows($search) <= 0){
-            echo "<script language='javascript' type='text/javascript'>
-            alert('Dado incorreto! Tente novamente');window.location
-            .href='../../pages/admin/login.php';</script>";
-            die();
-        }else{
-            setcookie("login",$consult);
-            header("Location: ../../pages/users/status.php");
-        }
 
+        if ($search && mysqli_num_rows($search) == 1) {     
+            echo("Consultando bilhete número {$bi}");
+            echo("<br>");
+
+            echo("Nome do usuário: {$result['name']}");
+            echo("<br>");
+            
+            echo("Status do usuário: {$result['status']}");
+        } else {
+            // falhou o login
+            echo "<a href = \"../../pages/auth/status-consult-user.php\" classe=\"text-center\">Tente novamente</a>";
+        }
         
     }
+
+	
+
