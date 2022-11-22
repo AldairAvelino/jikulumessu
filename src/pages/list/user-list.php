@@ -30,36 +30,42 @@
         </nav>
     </header>
     
+    <table class='table table-sm'>
+        <thead>
+            <tr>
+                <th scope='col'>id</th>
+                <th scope='col'>Name</th>
+                <th scope='col'>B.I.</th>
+                <th scope='col'>Status</th>
+                <th scope='col'>Created at</th>
+                <th scope='col'>Delete</th>
+            </tr>
+        </thead>
+
+
     <?php
-        echo "<table class='table table-sm'>";
-        echo "<thead>";
-        echo "<tr>";
-        echo "<th scope='col'>id</th>";
-        echo "<th scope='col'>Name</th>";
-        echo "<th scope='col'>B.I.</th>";
-        echo "<th scope='col'>Status</th>";
-        echo "<th scope='col'>Created at</th>";
-        echo "</tr>";
-        echo "</thead>";
-        echo "<tbody>";
-        
         include("../../actions/connection.php");
         $search = mysqli_query($connection, "SELECT * FROM user");
-        
+
         while($result = mysqli_fetch_array($search)){
-            echo "<tr>";
-            echo "<th scope='row'>" .$result['id']. "</th>";
-            echo "<td>" .$result['name']. "</td>";            
-            echo "<td>" .$result['bi']. "</td>";            
-            echo "<td>" .$result['status']. "</td>";            
-            echo "<td>" .$result['created_at']. "</td>";
-        }
+            ?>
 
-
-
-        echo "</tbody>";
-        echo "</table>";
-    ?>
+            <tbody>
+                <tr>
+                    <th scope="row"><?php echo($result['id']); ?></th>
+                    <td><?php echo($result['name']); ?></td>
+                    <td><?php echo($result['bi']); ?></td>
+                    <td><?php echo($result['status']); ?></td>
+                    <td><?php echo($result['created_at']); ?></td>
+                    <td>
+                        <form action='../../actions/delete/delete-user.php' method='POST'>
+                            <input type="hidden" name="id" value="<?php echo($result['id']); ?>">
+                            <button type='submit' class='btn btn-danger pad m-1' name='delete' value="DELETE">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        <?php } ?>
     
 </body>
 </html>
