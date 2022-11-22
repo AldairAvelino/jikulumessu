@@ -24,7 +24,8 @@
             echo("Status do usuário: {$result['status']}");
         } else {
             // falhou o login
-            echo "<a href = \"../../pages/auth/status-consult-user.php\" classe=\"text-center\">Tente novamente</a>";
+            echo "<p>Esse dado que inseriste não se encontra na nossa base de dados</p>";
+            echo "<a href = \"../../pages/auth/status-consult-user.php\" classe=\"text-center\">Insira corretamente, e tente novamente</a>";
         }
         
     }
