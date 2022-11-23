@@ -1,12 +1,19 @@
 <?php
     include("../connection.php");
 
-    $id = mysqli_real_escape_string($connection, $_POST['edit']);
-    $name = mysqli_real_escape_string($connection, $_POST['edit']);
-    $email = mysqli_real_escape_string($connection, $_POST['edit']);
-    $password = mysqli_real_escape_string($connection, $_POST['edit']);
-    $role = mysqli_real_escape_string($connection, $_POST['edit']);
-
-    mysqli_query($connection, "UPDATE `admin` SET `name`='[value-2]',`email`='[value-3]',`password`='[value-4]',`role`='[value-5]' WHERE 1 `id` = '$ide'");
-
+    $id = mysqli_real_escape_string($connection, $_POST['id']);
+    $name = mysqli_real_escape_string($connection, $_POST['name']);
+    $email = mysqli_real_escape_string($connection, $_POST['email']);
+    $password = mysqli_real_escape_string($connection, $_POST['password']);
+    $role = mysqli_real_escape_string($connection, $_POST['role']);
+    
     $edit = mysqli_real_escape_string($connection, $_POST['edit']);
+
+    mysqli_query($connection, "UPDATE `admin` SET `name`='$name',`email`='$email',`password`='$password',`role`='$role' WHERE `id` = '$id'");
+
+
+    if(isset($edit)){
+        echo "<script language='javascript' type='text/javascript'>
+            alert('Cadastrado com sucesso!');window.location
+            .href='../../pages/list/admin-list.php';</script>";
+    }
