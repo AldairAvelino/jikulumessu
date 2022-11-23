@@ -38,7 +38,6 @@
                 <th scope='col'>B.I.</th>
                 <th scope='col'>Status</th>
                 <th scope='col'>Created at</th>
-                <th scope='col'>Edit</th>
             </tr>
         </thead>
 
@@ -57,10 +56,6 @@
                     <td><?php echo($result['bi']); ?></td>
                     <td><?php echo($result['status']); ?></td>
                     <td><?php echo($result['created_at']); ?></td>
-                    <td>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-                        
-                    </td>
                 </tr>
             </tbody>
         <?php } ?>
