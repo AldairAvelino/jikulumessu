@@ -38,7 +38,7 @@
                 <th scope='col'>B.I.</th>
                 <th scope='col'>Status</th>
                 <th scope='col'>Created at</th>
-                <th scope='col'>Delete</th>
+                <th scope='col'>Edit</th>
             </tr>
         </thead>
 
@@ -58,10 +58,8 @@
                     <td><?php echo($result['status']); ?></td>
                     <td><?php echo($result['created_at']); ?></td>
                     <td>
-                        <form action='../../actions/delete/delete-user.php' method='POST'>
-                            <input type="hidden" name="id" value="<?php echo($result['id']); ?>">
-                            <button type='submit' class='btn btn-danger pad m-1' name='delete' value="DELETE">Delete</button>
-                        </form>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+                        
                     </td>
                 </tr>
             </tbody>
