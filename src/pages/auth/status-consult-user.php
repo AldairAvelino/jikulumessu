@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="../../../assets/css/login-and-sing-up.css">
     <link rel="stylesheet" href="../../../assets/bootstrap-4.6.2-dist/css/bootstrap.css">
     <script src="../../../assets/bootstrap-4.6.2-dist/js/bootstrap.js"></script>
-    <title>Sign Up</title>
+    <title>Listagens | ADMIN</title>
 </head>
+
 <body class="text-center">
     <header>
         <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
@@ -21,7 +23,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="sign-up-admin.php">Administrator</a>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="sign-up-user.php">Normal User</a>
                     </li>
@@ -29,7 +31,7 @@
             </div>
         </nav>
     </header>
-    
+
     <form class="form-signin" action="../../actions/status/status.php" method="POST">
         <img class="logo" src="../../../assets/images/logo/logo.png" alt="logo">
         <h1 class="h3 mb-3 font-weight-normal">Consultar Meu Lugar</h1>
@@ -40,7 +42,16 @@
             <p>Não reservei meu lugar ainda! <a href="sign-up-user.php">Reservar</a></p>
         </div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit" name="consultar">Consultar</button>
+        <button type="submit" class="btn btn-lg btn-primary btn-block" name="consultar">
+            Consultar
+        </button>
+
     </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
 </body>
+
 </html>

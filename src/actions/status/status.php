@@ -1,27 +1,27 @@
 <?php
-    // começar ou retomar uma sessão
-    session_start();
-    include("../connection.php");
+    include("../../actions/connection.php");
 
-    // se vier um pedido para login
-    if (!empty($_POST)) {
-        $bi = mysqli_real_escape_string($connection, $_POST['bi']);
-        $consultar = mysqli_real_escape_string($connection, $_POST['consultar']);
+    echo("<link rel='stylesheet' href='../../../assets/bootstrap-4.6.2-dist/css/bootstrap.css'>");
+    echo("<script src='../../../assets/bootstrap-4.6.2-dist/js/bootstrap.js'></script>");
 
-        // verificar o utilizador em questão (pretendemos obter uma única linha de registos)
-	    $search = mysqli_query($connection, "SELECT * FROM user WHERE bi ='$bi'")
+    $consultar = mysqli_real_escape_string($connection, $_POST['consultar']);
+    $bi = mysqli_real_escape_string($connection, $_POST['bi']);
+    
+    if(isset($bi)){
+        $search = mysqli_query($connection, "SELECT `name`, `bi`, `status` FROM `user` WHERE `bi` = '$bi'")
         or die("FALHA AO CONSULTAR");
 
         $result = mysqli_fetch_array($search);
 
         if ($search && mysqli_num_rows($search) == 1) {     
-            echo("Consultando bilhete número {$bi}");
-            echo("<br>");
+            echo("<p>Bilhete de Identidade número: {$bi}</p>");
 
-            echo("Nome do usuário: {$result['name']}");
-            echo("<br>");
+            echo("<p>Nome do usuário: {$result['name']}</p>");
             
-            echo("Status do usuário: {$result['status']}");
+            echo("<p>Status do usuário: {$result['status']}</p>");
+
+            echo "<a href = \"../../pages/auth/status-consult-user.php\" classe=\"text-center\">Consular outro número</a>";
+
         } else {
             // falhou o login
             echo "<p>Esse dado que inseriste não se encontra na nossa base de dados</p>";
@@ -29,6 +29,3 @@
         }
         
     }
-
-	
-

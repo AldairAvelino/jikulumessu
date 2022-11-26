@@ -11,5 +11,5 @@
     if(isset($edit)){
         echo "<script language='javascript' type='text/javascript'>
             alert('Alterado com sucesso!');window.location
-            .href='../../pages/dashboard/dashboard.php';</script>";
+            .href='../../pages/list/esperando-list.php';</script>";
     }

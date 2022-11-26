@@ -21,11 +21,11 @@
             <div class="ml-auto collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="sign-up-admin.php">Administrator</a>
+                        <a class="nav-link" href="../../pages/auth/sign-up-admin.php">Administrator</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="sign-up-user.php">Normal User</a>
+                        <a class="nav-link" href="../../pages/auth/sign-up-user.php">Normal User</a>
                     </li>
                 </ul>
             </div>
@@ -53,6 +53,7 @@
             while ($result = mysqli_fetch_array($search)) {
             ?>
                 <tr>
+                    <?php if(($result['status'] != 'Desistiu') && ($result['status'] !=  'Atendido')){ ?>
                     <th scope="row"><?php echo ($result['id']); ?></th>
                     <td><?php echo ($result['name']); ?></td>
                     <td><?php echo ($result['bi']); ?></td>
@@ -63,13 +64,14 @@
                             Edit
                         </button>
                     </td>
+                    <?php } ?>
                 </tr>
 
                 <div class="modal fade" id="<?php echo ('modalGestor' . $result['id']); ?>" tabindex="-1" role="dialog" aria-labelledby="modalGestorLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalGestorLabel">Editar dados de um Gestor</h5>
+                                <h5 class="modal-title" id="modalGestorLabel">Editar status de um usuário</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>

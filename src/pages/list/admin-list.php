@@ -21,11 +21,11 @@
             <div class="ml-auto collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="sign-up-admin.php">Administrator</a>
+                        <a class="nav-link" href="../../pages/auth/sign-up-admin.php">Administrator</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="sign-up-user.php">Normal User</a>
+                        <a class="nav-link" href="../../pages/auth/sign-up-user.php">Normal User</a>
                     </li>
                 </ul>
             </div>
