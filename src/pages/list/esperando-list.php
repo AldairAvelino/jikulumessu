@@ -53,7 +53,7 @@
             while ($result = mysqli_fetch_array($search)) {
             ?>
                 <tr>
-                    <?php if(($result['status'] != 'Desistiu') && ($result['status'] !=  'Atendido')){ ?>
+                    <?php if($result['status'] == 'Esperando'){ ?>
                     <th scope="row"><?php echo ($result['id']); ?></th>
                     <td><?php echo ($result['name']); ?></td>
                     <td><?php echo ($result['bi']); ?></td>
