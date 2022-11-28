@@ -11,25 +11,6 @@
     <title>Sign Up</title>
 </head>
 <body class="text-center">
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="ml-auto collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="sign-up-admin.php">Administrator</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="sign-up-user.php">Normal User</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    
     <form class="form-signin" action="../../actions/auth/sign-up-user.php" method="POST">
         <img class="logo" src="../../../assets/images/logo/logo.png" alt="logo">
         <h1 class="h3 mb-3 font-weight-normal">Reservar Lugar na Fila</h1>
@@ -43,6 +24,11 @@
         </div>
 
         <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Reservar</button>
+
+        <div class="mb-3 text-right">
+            <p><a href="login-admin.php">Login</a></p>
+        </div>
+        
     </form>
 </body>
 </html>

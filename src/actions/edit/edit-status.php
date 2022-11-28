@@ -1,15 +1,13 @@
 <?php
-    include("../connection.php");
+include("../connection.php");
 
-    $id = mysqli_real_escape_string($connection, $_POST['id']);
-    $status = mysqli_real_escape_string($connection, $_POST['status']);
-    
-    $edit = mysqli_real_escape_string($connection, $_POST['edit']);
+$id = mysqli_real_escape_string($connection, $_POST['id']);
+$status = mysqli_real_escape_string($connection, $_POST['status']);
 
-    mysqli_query($connection, "UPDATE `user` SET `status`='$status' WHERE `id` = '$id'");
+$edit = mysqli_real_escape_string($connection, $_POST['edit']);
 
-    if(isset($edit)){
-        echo "<script language='javascript' type='text/javascript'>
-            alert('Alterado com sucesso!');window.location
-            .href='../../pages/list/esperando-list.php';</script>";
-    }
+mysqli_query($connection, "UPDATE `user` SET `status`='$status' WHERE `id` = '$id'");
+
+if (isset($edit)) {
+    header("location: ../../pages/principal.php?acao=fila");
+}

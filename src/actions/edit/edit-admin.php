@@ -12,8 +12,6 @@
     mysqli_query($connection, "UPDATE `admin` SET `name`='$name',`email`='$email',`password`='$password',`role`='$role' WHERE `id` = '$id'");
 
 
-    if(isset($edit)){
-        echo "<script language='javascript' type='text/javascript'>
-            alert('Cadastrado com sucesso!');window.location
-            .href='../../pages/list/admin-list.php';</script>";
+    if(isset($edit)){       
+        header("location: ../../pages/principal.php?acao=user");
     }

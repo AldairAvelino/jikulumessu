@@ -1,22 +1,19 @@
+<?php include_once"src/actions/connection.php";
+session_start();
+ ?>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <title>Bootstrap 4 Dashboard</title>
+  <title>Jukulomesso</title>
   <base target="_self">
   <meta name="description" content="A Bootstrap 4 admin dashboard theme that will get you started. The sidebar toggles off-canvas on smaller screens. This example also include large stat blocks, modal and cards. The top navbar is controlled by a separate hamburger toggle button."
   />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google" value="notranslate">
-
-
   <!--stylesheets / link tags loaded here-->
-
-
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
-
-
   <style type="text/css">
     body,
     html {
@@ -107,13 +104,11 @@
   
   <div class="container" id="main">
     <div class="row row-offcanvas row-offcanvas-left">
-      
 
       <div class="col-md-9 col-lg-10 main">
         <h1 class="jumbotron">Fila de Espera - Jikulumessu</h1>
         <?php
-            include("src/actions/connection.php");
-
+           
             $atendido = 0;
             $esperando = 0;
             $desistente = 0;
@@ -149,9 +144,6 @@
           <div class="col-xl-3 col-lg-6">
             <div class="card card-inverse card-success">
               <div class="card-block bg-success">
-                <div class="rotate">
-                  <i class="fa fa-user fa-5x"></i>
-                </div>
                 <h6 class="text-uppercase">Pessoas atendidas</h6>
                 <h1 class="display-1"><?php echo($atendido); ?></h1>
               </div>
@@ -160,9 +152,6 @@
           <div class="col-xl-3 col-lg-6">
             <div class="card card-inverse card-danger">
               <div class="card-block bg-danger">
-                <div class="rotate">
-                  <i class="fa fa-list fa-4x"></i>
-                </div>
                 <h6 class="text-uppercase">Desistentes</h6>
                 <h1 class="display-1"><?php echo($desistente); ?></h1>
               </div>
@@ -171,9 +160,6 @@
           <div class="col-xl-3 col-lg-6">
             <div class="card card-inverse card-info">
               <div class="card-block bg-info">
-                <div class="rotate">
-                  <i class="fa fa-twitter fa-5x"></i>
-                </div>
                 <h6 class="text-uppercase">Pessoas em Espera</h6>
                 <h1 class="display-1"><?php echo($esperando); ?></h1>
               </div>
@@ -182,9 +168,6 @@
           <div class="col-xl-3 col-lg-6">
             <div class="card card-inverse card-warning">
               <div class="card-block bg-warning">
-                <div class="rotate">
-                  <i class="fa fa-share fa-5x"></i>
-                </div>
                 <h6 class="text-uppercase">Total</h6>
                 <h1 class="display-1"><?php echo($esperando + $desistente + $atendido); ?></h1>
               </div>

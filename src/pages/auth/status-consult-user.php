@@ -27,6 +27,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="sign-up-user.php">Normal User</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../index.php">Dashboard</a>
+                    </li>
                 </ul>
             </div>
         </nav>

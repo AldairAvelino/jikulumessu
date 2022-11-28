@@ -9,9 +9,8 @@
 
         if($request){
             echo "<script>alert('Dado Eliminado com sucesso! 🚀');</script>";
-            header("location: ../../pages/list/admin-list.php");
+            header("location: ../../pages/principal.php?acao=user");
         }else{
-            echo "<script>alert('Erro ao eliminar dado. 😅');</script>";
-            header("location: ../../pages/list/admin-list.php");
+            header("location: ../../pages/error-reserve.php");
         }
     }
