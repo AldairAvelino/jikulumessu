@@ -18,7 +18,7 @@
                         <a class="nav-link" href="?acao=fila">Lista/Fila</a>
                     </li>
                    <?php } }else{
-                    header("Location: ../auth/login-admin.php");
+                    header("Location: ../pages/auth/login-admin.php");
                    } ?>
                    <li class="nav-item">
                         <a class="nav-link" href="../actions/sair.php">Sair</a>
