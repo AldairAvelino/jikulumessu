@@ -1,69 +1,60 @@
 <style>
 /* Basic Style */
+    html, body {
+        background-color: #ffccdd;
+        margin: 10px;
+    }
 
-html, body {
-    background-color: #ffccdd;
-    margin: 10px;
-}
+    .wrapper{
+        width: 100%;
 
-.wrapper{
-	width: 100%;
+    }
 
-}
+    h1{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 38px;
+        text-align: center;
+        
+    }
 
-h1{
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 38px;
-	text-align: center;
-	
-}
+    .container > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        color: #ffeead;
+    }
 
-.container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    color: #ffeead;
-}
+    .container > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+            border: 1px solid black
+    }
 
-.container > div > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-		border: 1px solid black
-}
+    /* Grid */
+    .container {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-auto-rows: 125px;
+            grid-auto-flow: dense; /* Fill all spaces with fitted images */
+    }
 
-/* Grid */
-.container {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-auto-rows: 125px;
-		grid-auto-flow: dense; /* Fill all spaces with fitted images */
-}
+    .horizontal {
+        grid-column: span 2;
+    }
 
-.horizontal {
-	grid-column: span 2;
-}
+    .vertical {
+        grid-row: span 2;
+    }
 
-.vertical {
-	grid-row: span 2;
-}
-
-.big {
-	grid-column: span 2;
-	grid-row: span 2;
-}
-
-/* Media Queries */
-
-@media screen and (min-width: 1024px){
-	.wrapper{
-		width: 960px;
-		margin: 0 auto;
-	}
-}
+    .big {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
 </style>
+
 <div class="wrapper">
 	<h1>Image Grid</h1>
 	<div class="container">
