@@ -1,4 +1,4 @@
-<h1 align="center" style="background: white">
+<h1 align="center" style="background: red">
     <img alt="Jikulumessu" title="Jikulumessu" src="assets/images/logo/logo.png" width="220px" />
 </h1>
 
