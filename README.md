@@ -28,10 +28,10 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [x] HTML
-- [x] CSS
+- [x] HTML 5
+- [x] CSS 3
 - [x] Bootstrap 4.6.2
-- [x] PHP
+- [x] PHP 7.4.30
 - [x] MySQL
 - [x] MarkDown
 - [x] Git & GitHub
