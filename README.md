@@ -36,9 +36,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [x] MarkDown
 - [x] Git & GitHub
 
-
-<br>
-
 ## Layout
 
 Você pode visualizar o layout do projeto através [desse link](LAYOUT.md). Lembrando de que as photos são do sistema funcioal. 😎
