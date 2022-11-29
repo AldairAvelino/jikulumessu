@@ -5,7 +5,7 @@ session_start();
 
 <head>
   <meta charset="utf-8">
-  <title>Jukulomesso</title>
+  <title>Jikulumessu</title>
   <base target="_self">
   <meta name="description" content="A Bootstrap 4 admin dashboard theme that will get you started. The sidebar toggles off-canvas on smaller screens. This example also include large stat blocks, modal and cards. The top navbar is controlled by a separate hamburger toggle button."
   />
