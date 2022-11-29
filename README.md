@@ -55,4 +55,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-<h3 align="center">Feito por [Aldair Avelino](https://github.com/AldairAvelino).</h3>
+<h3 align="center">Feito por <a href="https://github.com/AldairAvelino">Aldair Avelino</a>.</h3>
