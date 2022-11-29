@@ -2,21 +2,17 @@
     .container {
             background: #f9f9f9;
         }
-        
         .flex-column {
             max-width: 260px;
         }
-        
         img {
             margin: 5px;
         }
-        
         .scale {
             transform: scaleY(1.05);
             padding-top: 5px; 
         }
 </style>
-
 <div class="container-fluid">
     <div class="d-flex flex-row flex-wrap justify-content-center">
         <div class="d-flex flex-column">
