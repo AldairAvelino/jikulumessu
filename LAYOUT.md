@@ -2,6 +2,21 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="assets/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <style>
+        .container {
+            background: #f9f9f9;
+        }
+        .flex-column {
+            max-width: 260px;
+        }
+        img {
+            margin: 5px;
+        }
+        .scale {
+            transform: scaleY(1.05);
+            padding-top: 5px; 
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid">
