@@ -40,14 +40,35 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Você pode visualizar o layout do projeto através [desse link](LAYOUT.md). Lembrando de que as photos são do sistema funcioal. 😎
 
+## Requisitos para contribuir no projecto
+
+Para poder contribuir neste projeto você precisa cumprir essas seguintes etapas:
+
+- Ter o Visual Studio Code instalado ou qualquer outra IDE
+- Instalar o `Xampp` no seu computador ou até mesmo o `WampServer`
+- Ter a versão do PHP `>=` que 7.4
+
 ## Como contribuir
 
 - Faça um fork desse repositório;
+- Clona esse projeto para a tua máquina de trabalho
 - Cria uma branch com a sua feature: `git checkout -b minha-feature`;
 - Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
 - Faça push para a sua branch: `git push origin minha-feature`.
 
 - Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
+
+## Como Usar o Sistema
+
+É muito simples para se usar esse sistema para base de estudo, para tal precisas apenas de seguir as seguintes etapas:
+
+- Clona o projeto para o teu computador na raiz `C:\xampp\htdocs`
+- Inicializa teu `Xampp` ou `WampServer`
+- Insira no teu navegador o seguinte link: `http://127.0.0.1/phpmyadmin/` ou então `http://localhost/phpmyadmin/`
+- Estando dentro do site phpMyAdmin, procura no menu a opção de `Importar` ou então clique neste link que te leva para lá `http://localhost/phpmyadmin/index.php?route=/server/import`
+- Clique em `Escolher ficheiro`, e pega o arquivo `jikulumessu.sql` dentro de `C:\xampp\htdocs\jikulumessu\assets\db` para poder ser a tua base de dados
+
+- Feito todos esses passos vais inserir no teu navegador o seguinte link: `http://localhost/jikulumessu/`, e vai te levar diretamente ao Sistema Jikulumessu. E daí em diante é só já usares o sistema para fins académico
 
 ## Licença
 
@@ -55,4 +76,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-<h3 align="center">Feito por <a href="https://github.com/AldairAvelino" target="_blank">Aldair Avelino</a></h3>
+<h4 align="center">Feito por <a href="https://github.com/AldairAvelino" target="_blank">Aldair Avelino</a></h4>
+<h3 align="center">Bons estudos! E, não se esqueça de deixar o teu Star &#127775; e de Compartilhar. 😎</h3>
