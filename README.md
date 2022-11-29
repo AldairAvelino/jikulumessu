@@ -51,8 +51,8 @@ Você pode visualizar o layout do projeto através [desse link](LAYOUT.md). Lemb
 
 ## Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes sobre essa mesma licença. 😎
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes sobre essa mesma licença. 😎
 
 ---
 
-<h3 align="center">Feito por <a href="https://github.com/AldairAvelino" target="_blank">Aldair Avelino</a>.</h3>
+<h3 align="center">Feito por <a href="https://github.com/AldairAvelino" target="_blank">Aldair Avelino</a></h3>
