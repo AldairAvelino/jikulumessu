@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Jikulumessu" style="background: white" title="Jikulumessu" src="assets/images/logo/logo.png" width="220px" />
+    <img alt="Jikulumessu" style="background-color: green;" title="Jikulumessu" src="assets/images/logo/logo.png" width="220px" />
 </h1>
 
 <p align="center">
