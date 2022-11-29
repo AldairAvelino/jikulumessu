@@ -47,7 +47,7 @@ Você pode visualizar o layout do projeto através [desse link](LAYOUT.md). Lemb
 - Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
 - Faça push para a sua branch: `git push origin minha-feature`.
 
-Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
+- Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
 ## Licença
 
