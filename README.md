@@ -13,7 +13,7 @@
 <br>
 
 <p align="center">
-  <img alt="Home" src="assets/images/layout/home.png" width="100%">
+  <img alt="Home" src="" width="100%">
 </p>
 
 ## O que é Jikulumessu
