@@ -6,4 +6,5 @@
 <body>
     
 </body>
+<script src="assets/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
 </html>
