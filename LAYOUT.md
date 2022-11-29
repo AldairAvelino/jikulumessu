@@ -1,28 +1,18 @@
 <style>
-    .layout{
-  width: 60vw; 
-  height: 80vh;
-  padding: 20px;
-  display: grid;
-  grid-gap: 10px 10px;
-  grid-template-rows: repeat(3, minmax(max-content, 1fr));
-  grid-template-columns: repeat(6, minmax(max-content, 1fr));
-  grid-template-areas: 
-    "d d a a e e"  
-    "d d b c e e"
-    "d d b c e e";
-}
 
-.img-1{grid-area: a;}
-.img-2{grid-area: b;}
-.img-3{grid-area: c;}
-.img-4{grid-area: d;}
-.img-5{grid-area: e;}
 </style>
-<div class="layout">
-  <div class="img img-1"></div>
-  <div class="img img-2"></div>
-  <div class="img img-3"></div>
-  <div class="img img-4"></div>
-  <div class="img img-5"></div>
+<div class="wrapper">
+	<h1>Image Grid</h1>
+	<div class="container">
+		<div class="horizontal"><img  src="https://picsum.photos/500/200" alt=""></div>
+		<div class="vertical"><img  src="https://picsum.photos/200/350" alt=""></div>
+		<div><img src="https://picsum.photos/200/200" alt=""></div>
+		<div class="big"><img   src="https://picsum.photos/600/600" alt=""></div>
+		<div class="vertical"><img  src="https://picsum.photos/250/400" alt=""></div>
+		<div class="horizontal"><img  src="https://picsum.photos/400/150" alt=""></div>
+		<div><img src="https://picsum.photos/200/220" alt=""></div>
+		<div class="horizontal"><img  src="https://picsum.photos/450/200" alt=""></div>
+		<div><img src="https://picsum.photos/220/250" alt=""></div>
+		<div><img src="https://picsum.photos/250/200" alt=""></div>
+	</div>
 </div>
